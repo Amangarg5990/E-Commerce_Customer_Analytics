@@ -1,0 +1,56 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": ["customer_id", "country", "orders"],
+    "properties": {
+      "customer_id": {
+        "bsonType": "string",
+        "description": "Unique customer identifier"
+      },
+      "country": {
+        "bsonType": "string",
+        "description": "Country of origin for the customer"
+      },
+      "first_purchase_date": {
+        "bsonType": "date",
+        "description": "Timestamp of the customer's first completed order"
+      },
+      "last_purchase_date": {
+        "bsonType": "date",
+        "description": "Timestamp of the customer's most recent completed order"
+      },
+      "total_orders_count": {
+        "bsonType": ["int", "long"],
+        "description": "Total number of completed orders"
+      },
+      "orders": {
+        "bsonType": "array",
+        "description": "List of customer orders",
+        "items": {
+          "bsonType": "object",
+          "required": ["invoice_no", "invoice_date", "items"],
+          "properties": {
+            "invoice_no": { "bsonType": "string" },
+            "invoice_date": { "bsonType": "date" },
+            "order_total": { "bsonType": ["double", "int", "long"] },
+            "items_count": { "bsonType": ["int", "long"] },
+            "items": {
+              "bsonType": "array",
+              "items": {
+                "bsonType": "object",
+                "required": ["stock_code", "quantity", "unit_price"],
+                "properties": {
+                  "stock_code": { "bsonType": "string" },
+                  "description": { "bsonType": "string" },
+                  "quantity": { "bsonType": ["int", "long"] },
+                  "unit_price": { "bsonType": ["double", "int", "long"] },
+                  "line_total": { "bsonType": ["double", "int", "long"] }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "roc_auc": 0.9558,
+  "pr_auc": 0.9292,
+  "accuracy": 0.87,
+  "precision": 0.765,
+  "recall": 0.8812,
+  "f1_score": 0.819,
+  "confusion_matrix": [
+    [
+      625,
+      98
+    ],
+    [
+      43,
+      319
+    ]
+  ],
+  "n_train": 3253,
+  "n_test": 1085,
+  "feature_names": [
+    "frequency",
+    "monetary",
+    "total_items",
+    "tenure_days",
+    "avg_order_value",
+    "avg_items_per_order",
+    "country_clean_Belgium",
+    "country_clean_France",
+    "country_clean_Germany",
+    "country_clean_Other",
+    "country_clean_Spain",
+    "country_clean_United Kingdom"
+  ],
+  "raw_features": [
+    "frequency",
+    "monetary",
+    "total_items",
+    "tenure_days",
+    "avg_order_value",
+    "avg_items_per_order",
+    "country_clean"
+  ],
+  "top_countries": [
+    "United Kingdom",
+    "Germany",
+    "France",
+    "Spain",
+    "Belgium"
+  ]
+}
