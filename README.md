@@ -1,4 +1,6 @@
-# 🍃 MongoDB E-Commerce Customer 360° & Behavioral Analytics Engine
+# E-Commerce_Customer_Analytics
+
+## 🍃 MongoDB E-Commerce Customer 360° & Behavioral Analytics Engine
 
 A production-grade **MongoDB Database & Data Engineering** platform that demonstrates how to architect a **Customer 360 Document Store**, enforce database governance with **`$jsonSchema`**, execute complex in-database **Aggregation Pipelines**, and power machine learning analytics on 541,000+ real-world retail transactions.
 
